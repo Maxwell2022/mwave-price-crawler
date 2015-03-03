@@ -1,13 +1,14 @@
 # mwave-price-crawler
 Quick and dirty price crawler for MWave (mwave.com.au)
+This crawler is using [node-crawler](https://github.com/sylvinus/node-crawler) project in order to crawl pages
 
-# Installation
+## Installation
 `npm install`
 
-# Configuration
+## Configuration
 MWave items to crawl are located in: `config.coffee`
 
-# How to run
+## How to run
 I'm using CoffeeScript so you can either install it globally:
 
 ```
@@ -26,10 +27,10 @@ Or use the local installation of coffee-script
 ./node_modules/.bin/coffee crawler.coffee
 ```
 
-# Reporting
+## Reporting
 At the moment the prices are displayed in the console and save in the data folder of your project. 
 There is one file per day so you can keep and historic of the prices
 
-# Todo
+## Todo
 * handle the case where there is no prices on the page (ie. discontinued)
 
