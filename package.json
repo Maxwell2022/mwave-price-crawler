@@ -1,0 +1,24 @@
+{
+  "name": "mwave-price-crawler",
+  "version": "1.0.0",
+  "description": "Crawl MWave to get price information, can be use to track price fluctuation",
+  "main": "index.js",
+  "dependencies": {
+    "coffee-script": "^1.9.1",
+    "crawler": "^0.4.2",
+    "fs": "0.0.2",
+    "moment": "^2.9.0",
+    "underscore": "^1.8.2",
+    "url": "^0.10.3",
+    "winston": "^0.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "mwave"
+  ],
+  "author": "Maxime",
+  "license": "MIT"
+}
