@@ -19,13 +19,13 @@ npm install -g coffee-script
 and then run:
 
 ```
-coffee crawler.coffee
+coffee server.coffee
 ```
 
 Or use the local installation of coffee-script
 
 ```
-./node_modules/.bin/coffee crawler.coffee
+./node_modules/.bin/coffee server.coffee
 ```
 
 ## Reporting
