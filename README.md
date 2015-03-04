@@ -6,7 +6,8 @@ This crawler is using [node-crawler](https://github.com/sylvinus/node-crawler) p
 `npm install`
 
 ## Configuration
-MWave items to crawl are located in: `config.coffee`
+MWave items to crawl are located in: `source.coffee`
+You can setup multiple configuration if you wish
 
 ## How to run
 I'm using CoffeeScript so you can either install it globally:
@@ -29,8 +30,8 @@ Or use the local installation of coffee-script
 
 ## Reporting
 At the moment the prices are displayed in the console and save in the data folder of your project. 
-There is one file per day so you can keep and historic of the prices
+There is one file per configuration so you can keep and history of the prices on a daily basis for each configuration
 
 ## Todo
 * handle the case where there is no prices on the page (ie. discontinued)
-
+* chart to see price fluctuation
