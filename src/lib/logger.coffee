@@ -1,4 +1,4 @@
-config  = require '../config'
+config  = require '../../config/environment'
 winston = require 'winston'
 moment  = require 'moment'
 
