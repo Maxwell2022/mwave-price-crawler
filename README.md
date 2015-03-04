@@ -32,6 +32,27 @@ Or use the local installation of coffee-script
 At the moment the prices are displayed in the console and save in the data folder of your project. 
 There is one file per configuration so you can keep and history of the prices on a daily basis for each configuration
 
+## Deployment
+This application is ready to be deployed on Heroku:
+
+Make sure you have the [toolbelt](https://toolbelt.heroku.com/) installed and that you are login:
+
+```
+$ heroku login
+```
+
+```
+$ cd my-project/
+$ git init
+$ heroku git:remote -a <you application name>
+```
+
+Deploy your application to Heroku using Git.
+
+```
+$ git push heroku master
+```
+
 ## Todo
 * handle the case where there is no prices on the page (ie. discontinued)
 * chart to see price fluctuation
