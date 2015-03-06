@@ -18,13 +18,18 @@ slugify = (string) ->
 callback = (error, result, $) ->
   # $ is Cheerio by default
   # a lean implementation of core jQuery designed specifically for the server
-  label = $('span[itemprop=name]').html().trim()
-  price = $('span[itemprop=price]').html().replace(/\$/, '')
+  try
+    label = $('span[itemprop=name]')?.html()?.trim()
+    price = $('span[itemprop=price]')?.html()?.replace(/\$/, '')
+  catch err
+    label = 'Couldn\'t find the requested item'
+    price = 0
 
+  price = parseFloat(price) or 0
   logger.info "Price for '" + result.options.item.name + "' (" + label + "): "+ tool.colorize('error', '$' + price)
   result.options.prices.push
     name: result.options.item.name
-    price: parseFloat(price)
+    price: price
     label: label
   return
 
